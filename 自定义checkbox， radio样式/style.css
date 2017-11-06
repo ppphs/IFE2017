@@ -1,0 +1,93 @@
+div {
+  font-size: 0;
+}
+
+/* 所有的input都隐藏 */
+.checkbox-bg, .radio-bg, .checkbox-wl, .radio-wl{
+  display: none;
+}
+
+/* 用雪碧图实现 */
+
+/* 未点击 */
+.checkbox-bg+label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 10px 10px 0;
+  background: url('./bg.png') -24px -32px;
+}
+
+/* 点击 */
+.checkbox-bg:checked+label {
+  background: url('./bg.png') -59px -31px;
+}
+
+.radio-bg+label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 10px 10px 0;
+  background: url('./bg.png') -24px -10px;
+}
+
+.radio-bg:checked+label {
+  background: url('./bg.png') -59px -10px;
+}
+
+/* 用伪类实现 */
+/* 未点击 */
+.checkbox-wl+label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d9d9d9;
+  margin: 0 10px 10px 0;
+  overflow: hidden; /* 防止点击加上伪类时margin-bottom的bug */
+}
+
+/* 点击了 */
+.checkbox-wl:checked+label {
+  color: red;
+  font-size: 22px;
+  border-color: red;
+  text-align: center;
+}
+
+.checkbox-wl:checked+label:after {
+  content: '\2714'; /* 特殊字符 */
+  line-height: 18px;
+  vertical-align: top;
+}
+
+/* 未点击 */
+.radio-wl+label {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  margin: 0 10px 10px 0;
+}
+
+/* 点击了 */
+.radio-wl:checked+label {
+  color: red;
+  font-size: 22px;
+  border-color: red;
+  text-align: center;
+}
+
+.radio-wl:checked+label:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '  ';
+  border-radius: 50%;
+  display: inline-block;
+  width: 40%;
+  height: 40%;
+  background: red;
+  transform: translate(-50%, -50%)
+}
