@@ -15,7 +15,7 @@ Observer.prototype.walk = function (obj) {
   }
 }
 
-Observer.prototype.define = function (key, val, callback, emitWatch) {
+Observer.prototype.define = function (key, val, callback) {
   let _self = this
   Object.defineProperty(_self.data, key, {
     get: function () {
