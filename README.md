@@ -18,3 +18,5 @@
   <script src="./main.js"></script>
 </body>
 ```
+
+* [自定义网页右键菜单](https://ppphs.github.io/IFE2017/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E9%A1%B5%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95/index.html)
