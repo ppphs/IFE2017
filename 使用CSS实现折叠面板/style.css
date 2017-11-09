@@ -1,0 +1,41 @@
+.panel {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.container input[type="checkbox"] {
+  display: none;
+}
+
+.panel label {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  background: #eee;
+  box-sizing: border-box;
+}
+
+.panel .content {
+  width: 100%;
+  height: 0;
+  border: 1px solid #ccc;
+  border-top: 0;
+  /* padding: 10px; 不能通过padding来设置文字和父容器的边距，因为这样transition也会控制到padding的过渡*/
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: all .8s linear;
+  visibility: hidden; /* 隐藏掉最后的边框 */
+}
+
+.panel input[type="checkbox"]:checked+label+.content {
+  height: 200px;
+  visibility: visible;
+}
+
+.panel .content .text {
+  margin: 10px;
+}
