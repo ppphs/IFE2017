@@ -20,3 +20,4 @@
 ```
 
 * [自定义网页右键菜单](https://ppphs.github.io/IFE2017/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E9%A1%B5%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95/index.html)
+* [使用CSS实现折叠面板](https://ppphs.github.io/IFE2017/%E4%BD%BF%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E6%8A%98%E5%8F%A0%E9%9D%A2%E6%9D%BF/index.html)
