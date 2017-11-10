@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS3实现3D 轮播图</title>
+  <style>
+    body{
+      margin: 0;
+    }
+		.container{
+			width: 400px;
+			height: 100px;
+			margin: 100px auto;
+			perspective: 1000px; /* 透视点，值越高看得越内部 */
+		}
+		.img_box{
+			width: 400px;
+			transform-style: preserve-3d; /* 容器要加个3D视图声明 */
+			position: relative;
+			animation: rotate 10s infinite; /* 动画旋转容器 */
+		}
+		.img_box:hover{
+			animation-play-state: paused; /* 鼠标hover停止动画 */
+		}
+		@keyframes rotate{
+			0% {
+				transform: rotateY(0deg);
+			}
+			25% {
+				transform: rotateY(90deg);
+			}
+			50% {
+				transform: rotateY(180deg);
+			}
+			75% {
+				transform: rotateY(270deg);
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+		}
+		img{
+			position: absolute; /* 全部都要集中在一个点上再用transformZ把它们散开 */
+      width: 400px;
+      height: 300px;
+		}
+		img:nth-child(1) { 
+			transform: rotateY(0deg) translateZ(420px); 
+		}
+		img:nth-child(2) { 
+			transform: rotateY(90deg) translateZ(420px); 
+		}
+		img:nth-child(3) { 
+			transform: rotateY(180deg) translateZ(420px); 
+		}
+		img:nth-child(4) { 
+			transform: rotateY(270deg) translateZ(420px); 
+		}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="img_box" id="box">
+      <img src="./image/1.jpg">
+      <img src="./image/2.jpg">
+      <img src="./image/3.jpg">
+      <img src="./image/4.jpg">
+    </div>
+  </div>
+</body>
+</html>
