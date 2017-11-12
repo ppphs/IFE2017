@@ -22,7 +22,7 @@
 * [自定义网页右键菜单](https://ppphs.github.io/IFE2017/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E9%A1%B5%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95/index.html)
 * [使用CSS实现折叠面板](https://ppphs.github.io/IFE2017/%E4%BD%BF%E7%94%A8CSS%E5%AE%9E%E7%8E%B0%E6%8A%98%E5%8F%A0%E9%9D%A2%E6%9D%BF/index.html)
 * [CSS实现3D轮播](https://ppphs.github.io/IFE2017/CSS3%E5%AE%9E%E7%8E%B03D%20%E8%BD%AE%E6%92%AD%E5%9B%BE/index.html)
-* [js遍历树形结构生成dom](https://ppphs.github.io/IFE2017/%E5%AE%9E%E7%8E%B0%E6%A0%91%E8%A1%8C%E7%BB%84%E4%BB%B6/index.html)
+* [js遍历树形结构生成dom](https://ppphs.github.io/IFE2017/%E5%AE%9E%E7%8E%B0%E6%A0%91%E5%BD%A2%E7%BB%84%E4%BB%B6/index.html)
 ```javascript
 [
   {
