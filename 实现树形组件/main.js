@@ -47,6 +47,7 @@ window.onload = function () {
         sign.className = 'iconfont icon-jiajianzujianjiahao left'
         folderIcon.className = 'iconfont icon-wenjianjia1 left'
         children.className = 'children'
+        title.className = 'title'
         title.textContent = el.name
         title.appendChild(sign)
         title.appendChild(folderIcon)
